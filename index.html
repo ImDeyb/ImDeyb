@@ -47,17 +47,17 @@ border-radius: 16px;
             cursor: pointer;
         }
 .buttons3 button {
-            background-color: #ff69b4;
-            border: none;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 16px;
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 10px;
-            cursor: pointer;
-        }
+    background-color: #ff69b4;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 16px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
  .hidden {
             display: none;
         }
@@ -81,11 +81,9 @@ border-radius: 16px;
             display: none;
         }
 .btn-group button {
-    width: 100%;
-    height: 40px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
  position: absolute;
     width: 150px;
     height: inherit;
@@ -99,7 +97,7 @@ border-radius: 16px;
     font-size: 1.2em;
 }
 .btn-group button:nth-child(1) {
-    margin-left: -200px;
+    margin-left: 200px;
     background: #e94d58;
 }
 .btn-group button:nth-child(2) {
@@ -122,7 +120,7 @@ h2 {
 <body>
 <div id="firstPage" class="container">
         <h1>Hey! I like you! 🥰</h1>
-        <div class="buttons" onclick="proceedToSecondPage()">TAP MO AKO PLS!!!😚</div>
+        <div class="buttons" onclick="proceedToSecondPage()">👉TAP MO AKO PLS😚!!!👈</div>
     </div>
 
    <div id="secondPage" class="container hidden">
@@ -228,10 +226,10 @@ function proceedToSecondPage() {
         }
 // <![CDATA[
 var colours=new Array('#f00', '#f06', '#f0f', '#f6f', '#f39', '#f9c'); // colours of the hearts
-var minisize=15; // smallest size of hearts in pixels
-var maxisize=30; // biggest size of hearts in pixels
-var hearts=100; // maximum number of hearts on screen
-var over_or_under="over"; // set to "over" for hearts to always be on top, or "under" to allow them to float behind other objects
+var minisize=15;
+var maxisize=30; 
+var hearts=100;
+var over_or_under="over";
 
 var x=ox=400;
 var y=oy=300;
